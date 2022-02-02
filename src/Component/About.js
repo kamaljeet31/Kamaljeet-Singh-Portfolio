@@ -77,11 +77,11 @@ const About = () => {
                   HTML5, CSS3, Bootstrap
                   <br /> Materialize CSS, SCSS
                   <br /> WordPress
-                  <br /> JavaScript, ReactJS
-                  <br /> AngularJS, NextJS
+                  <br /> JavaScript, React.JS
+                  <br /> Angular, Next.JS
                   <br /> RESTful APIs
                   <br />
-                  Node, ExpressJS, MongoDB
+                  Node.JS, Express.JS, MongoDB
                 </p>
               </div>
 
