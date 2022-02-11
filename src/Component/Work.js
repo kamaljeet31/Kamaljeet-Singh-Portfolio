@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import Button from 'react-bootstrap/Button'
 import { FaGithub } from 'react-icons/fa'
 
-const Work = () => {
+const Work = ({ items }) => {
   return (
     <>
       <Brand />
@@ -24,113 +24,55 @@ const Work = () => {
               <br />
             </div>
             <div className='row'>
-              <div className='col-lg-4 text-center'>
-                <div className='img-container'>
-                  <img
-                    className='img-fluid project-photo'
-                    src='img/amazon.png'
-                    alt='AmazonClone'
-                  />
-                  <a
-                    target='_blank'
-                    rel='noreferrer'
-                    href='https://github.com/kamaljeet31/amazon-clon-react'
-                    className='github-link'
-                  >
-                    <i className='fas fa-search'>
-                      <FaGithub />
-                    </i>
-                  </a>
-                </div>
-                <h2>
-                  Amazon Clone
-                  <br />
-                  <small>Website for E-Business</small>
-                </h2>
+              {items?.map((imgItem) => {
+                const {
+                  id,
+                  img,
+                  gitLink,
+                  websiteInfo,
+                  projectLink,
+                  projectName,
+                } = imgItem
+                return (
+                  <div className='col-lg-4 text-center' key={id}>
+                    <div className='img-container'>
+                      <img
+                        className='img-fluid project-photo'
+                        src={img}
+                        alt='AmazonClone'
+                      />
+                      <a
+                        target='_blank'
+                        rel='noreferrer'
+                        href={gitLink}
+                        className='github-link'
+                      >
+                        <i className='fas fa-search'>
+                          <FaGithub />
+                        </i>
+                      </a>
+                    </div>
+                    <h2>
+                      {projectName}
+                      <br />
+                      <small>{websiteInfo}</small>
+                    </h2>
 
-                <Button
-                  href='https://challenge-173bc.firebaseapp.com/'
-                  target='_blank'
-                  rel='noreferrer'
-                  variant='outline-secondary'
-                  size='lg'
-                >
-                  View Full Website
-                </Button>
+                    <Button
+                      href={projectLink}
+                      target='_blank'
+                      rel='noreferrer'
+                      variant='outline-secondary'
+                      size='lg'
+                    >
+                      View Full Website
+                    </Button>
 
-                <hr className='tagline-divider' />
-                <br />
-              </div>
-              <div className='col-lg-4 text-center'>
-                <div className='img-container'>
-                  <img
-                    className='img-fluid project-photo'
-                    src='img/pubHouse.png'
-                    alt='PubHouse'
-                  />
-                  <a
-                    target='_blank'
-                    rel='noreferrer'
-                    href='https://github.com/kamaljeet31/The-PubHouse'
-                    className='github-link'
-                  >
-                    <i className='fas fa-search'>
-                      <FaGithub />
-                    </i>
-                  </a>
-                </div>
-                <h2>
-                  The PubHouse
-                  <br />
-                  <small>Website for The Bar</small>
-                </h2>
-                <Button
-                  href='https://pubhouse.herokuapp.com/'
-                  target='_blank'
-                  rel='noreferrer'
-                  variant='outline-secondary'
-                  size='lg'
-                >
-                  View Full Website
-                </Button>
-                <hr className='tagline-divider' />
-                <br />
-              </div>
-              <div className='col-lg-4 text-center'>
-                <div className='img-container'>
-                  <img
-                    className='img-fluid project-photo'
-                    src='img/Car-dealership.png'
-                    alt='PubHouse'
-                  />
-                  <a
-                    target='_blank'
-                    rel='noreferrer'
-                    href='https://github.com/kamaljeet31/UsedCar-Agency-react'
-                    className='github-link'
-                  >
-                    <i className='fas fa-search'>
-                      <FaGithub />
-                    </i>
-                  </a>
-                </div>
-                <h2>
-                  Used Car Dealership
-                  <br />
-                  <small>Website for Car Dealership</small>
-                </h2>
-                <Button
-                  href='https://used-car-agency1.firebaseapp.com/'
-                  target='_blank'
-                  rel='noreferrer'
-                  variant='outline-secondary'
-                  size='lg'
-                >
-                  View Full Website
-                </Button>
-                <hr className='tagline-divider' />
-                <br />
-              </div>
+                    <hr className='tagline-divider' />
+                    <br />
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>

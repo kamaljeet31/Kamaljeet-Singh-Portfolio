@@ -7,6 +7,7 @@ import About from './Component/About'
 import Work from './Component/Work'
 import Contact from './Component/Contact'
 import Footer from './Component/Footer'
+import items from './data'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Hero />} />
         <Route exact path='/about' element={<About />} />
-        <Route exact path='/work' element={<Work />} />
+        <Route exact path='/work' element={<Work items={items} />} />
         <Route exact path='/contact' element={<Contact />} />
       </Routes>
       <Footer />

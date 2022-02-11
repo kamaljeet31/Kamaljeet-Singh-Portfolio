@@ -135,7 +135,7 @@ const About = () => {
 
             <div>
               <h4>Full Stack Web Developer</h4>
-              <h5>Freelance, Windsor, ON </h5>
+              <h5>Freelance, Brampton, ON </h5>
               <p>
                 • Create and maintain websites for small businesses such as
                 restaurants, educational institutions, gyms etc
@@ -148,11 +148,11 @@ const About = () => {
                 • Manage and execute multiple projects concurrently to meet
                 tight deadlines
                 <br />
-                • Build custom websites using Bootstrap and WordPress, including
+                • Built custom websites using Bootstrap and WordPress, including
                 custom plug-ins and filters
                 <br />
-                • Function with clients to develop layout, color scheme for
-                their website and implement it into a final interface design
+                • Implement processes for cleanup and performance improvement
+                that minimized downtime for the customer’s website by 19%
                 <br />
               </p>
               <h4>Software Developer </h4>
@@ -178,10 +178,6 @@ const About = () => {
                 guarantying high traffic and generating a 21% increase in the
                 company’s sales revenue
                 <br />
-                • Extensive experience working in Agile and Waterfall (SDLC
-                Methodologies) environments
-                <br />• Worked with clients to develop layout, color scheme for
-                their website and implemented it into a final interface design
               </p>
               <br />
               <h4>Web Developer</h4>
